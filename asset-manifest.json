@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/lorenzo-lopez/static/css/main.7cde36f9.chunk.css",
+    "main.js": "/lorenzo-lopez/static/js/main.23902e38.chunk.js",
+    "main.js.map": "/lorenzo-lopez/static/js/main.23902e38.chunk.js.map",
+    "runtime-main.js": "/lorenzo-lopez/static/js/runtime-main.863c8884.js",
+    "runtime-main.js.map": "/lorenzo-lopez/static/js/runtime-main.863c8884.js.map",
+    "static/js/2.1715e5a7.chunk.js": "/lorenzo-lopez/static/js/2.1715e5a7.chunk.js",
+    "static/js/2.1715e5a7.chunk.js.map": "/lorenzo-lopez/static/js/2.1715e5a7.chunk.js.map",
+    "static/js/3.8b380508.chunk.js": "/lorenzo-lopez/static/js/3.8b380508.chunk.js",
+    "static/js/3.8b380508.chunk.js.map": "/lorenzo-lopez/static/js/3.8b380508.chunk.js.map",
+    "index.html": "/lorenzo-lopez/index.html",
+    "static/css/main.7cde36f9.chunk.css.map": "/lorenzo-lopez/static/css/main.7cde36f9.chunk.css.map",
+    "static/js/2.1715e5a7.chunk.js.LICENSE.txt": "/lorenzo-lopez/static/js/2.1715e5a7.chunk.js.LICENSE.txt",
+    "static/media/logo.4a590e69.png": "/lorenzo-lopez/static/media/logo.4a590e69.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.863c8884.js",
+    "static/js/2.1715e5a7.chunk.js",
+    "static/css/main.7cde36f9.chunk.css",
+    "static/js/main.23902e38.chunk.js"
+  ]
+}
