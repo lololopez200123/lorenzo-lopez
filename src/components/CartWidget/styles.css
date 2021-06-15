@@ -1,0 +1,15 @@
+.container-cart{
+    position:relative;
+    float:right;
+    background:#e0ff00;
+    padding:1em;
+    border-radius: 35px;
+    top:-1.3em;
+    box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    transition:.5s ease background
+}
+
+.container-cart:hover{
+    background:#ffff00;
+    transition:.5s ease background
+}

@@ -2,7 +2,7 @@
 
 .nav{
     position:sticky;
-    background:#2e2e2e;
+    background:#121212;
     display:grid;
     grid-template-columns: 5fr 1fr;
     height:60px;

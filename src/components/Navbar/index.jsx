@@ -1,7 +1,8 @@
 import React from 'react'
-import "./NavBar.css"
+import "./styles.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import CartWidget from "../CartWidget/index.jsx"
 
 export default function Navbar() {
     return (
@@ -19,6 +20,7 @@ export default function Navbar() {
             <FontAwesomeIcon icon={faInstagram} className="icon-instagram" />
             <FontAwesomeIcon icon={faTwitter} className="icon-twitter" />
             </div>
+            <CartWidget />
         </nav>
         )
 }
