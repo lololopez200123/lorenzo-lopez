@@ -4,14 +4,14 @@
     pointer-events: none;
   }
   
-  @media (prefers-reduced-motion: no-preference) {
-    .Card-logo {
+
+.Card-logo {
       animation: App-logo-spin infinite 20s linear;
-    }
   }
+
   
   .Card {
-    background:rgb(35, 35, 35);
+    background:#121212;
     border:2px solid black;
     border-radius:16px;
     display: flex;
@@ -19,7 +19,8 @@
     align-items: center;
     color: white;
     width:22vw;
-    padding:.5em
+    padding:.5em;
+
   }
   
   .Card-link {
@@ -41,3 +42,5 @@
       transform: rotate(360deg);
     }
   }
+
+  

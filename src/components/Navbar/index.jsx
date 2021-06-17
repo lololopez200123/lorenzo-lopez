@@ -10,9 +10,9 @@ export default function Navbar() {
             <div className="nav-container">
                 <ul className="nav-items">
                     <li>Home</li>
-                    <li>Documentacion</li>
+                    <li>Productos</li>
                     <li>Contacto</li>
-                    <li>Librerias</li>
+                    <li>Cursos</li>
                 </ul> 
             </div>
             <div className="container-social">
