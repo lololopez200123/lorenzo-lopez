@@ -25,7 +25,7 @@ const productos = {
 
 export default function ItemListContainer() {
     return ( <div className="Card-container">
-                {productos.items.map(card => <CardWidget key={card.id} name={card.name} programa={card.github} stock={card.stock}/> )}
+                {productos.items.map(card => <CardWidget name={card.name} programa={card.github} stock={card.stock}/> )}
             </div>
     )
 }
