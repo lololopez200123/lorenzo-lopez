@@ -52,7 +52,7 @@ export default function ItemListContainer () {
             )
             : (
                 <div className="Card-container">
-                    { productos.map(card => <CardWidget key={card.key} name={card.name} stock={card.stock} />) }
+                    { productos.map(card => <CardWidget key={card.id} name={card.name} stock={card.stock} />) }
                 </div>
             )
     )
