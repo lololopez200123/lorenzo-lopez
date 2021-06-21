@@ -1,14 +1,14 @@
-import NavBar from "./components/Navbar"
-import Main from "./components/Main"
-import './App.css';
+import NavBar from 'components/Navbar'
+import Main from 'components/Main'
+import 'App.css'
 
-function App() {
-  return (
-    <div className="app">
-       <NavBar />
-       <Main />
-    </div>
-  );
+function App () {
+    return (
+        <div className="app">
+            <NavBar />
+            <Main />
+        </div>
+    )
 }
 
-export default App;
+export default App

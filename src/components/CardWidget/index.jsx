@@ -1,25 +1,24 @@
 import React from 'react'
-import logo from '../../logo.png';
-import "./styles.css"
-import ItemCount from "../ItemCount"
+import logo from 'logo.png'
+import 'components/ItemCount/styles.css'
+import ItemCount from 'components/ItemCount'
 
-export default function CardWidget({name, programa, stock, key}) {
-
+export default function CardWidget ({ name, stock, programa }) {
     const onAdd = () => {
-         alert("PRODUCTO AÑADIDO AL CARRO")
-        }
+        alert('PRODUCTO AÑADIDO AL CARRO')
+    }
 
     return (
-        <div className="Card" key={key}>
+        <div className="Card" >
             <img src={logo} className="Card-logo" alt="logo" />
             <p className="Card-text">
-            {name}
+                {name}
             </p>
             <a
-            className="Card-link"
-            href={`https://github.com/${programa}`}
-            target="_blank"
-            rel="noopener noreferrer"
+                className="Card-link"
+                href={`https://github.com/${programa}`}
+                target="_blank"
+                rel="noopener noreferrer"
             >
             Descargar Programa
             </a>
