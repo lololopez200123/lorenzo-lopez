@@ -9,6 +9,13 @@
     transition:.5s ease background
 }
 
+@media (max-width:575px){
+    .container-cart{
+        top:1.3em;
+        margin-right:1em
+    }
+}
+
 .container-cart:hover{
     background:#ffff00;
     transition:.5s ease background

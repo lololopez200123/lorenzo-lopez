@@ -1,11 +1,11 @@
 import React from 'react'
-import "./styles.css"
-import ItemListContainer from '../ItemListContainer'
+import 'components/ItemListContainer/styles.css'
+import ItemListContainer from 'components/ItemListContainer'
 
-export default function Main() {
+export default function Main () {
     return (
         <div>
-            <ItemListContainer name="Nombre predeterminado" github="lololopez200123"></ItemListContainer>
+            <ItemListContainer></ItemListContainer>
         </div>
     )
 }
