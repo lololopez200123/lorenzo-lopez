@@ -23,8 +23,11 @@
   }
   
   .Card-link {
-    color: white;
-    padding-bottom:1em
+    color: black;
+    padding:1em;
+    background-color:rgb(224,255,0);
+    border:none;
+    align-items:center
   }
 
   .Card-text{
