@@ -1,0 +1,22 @@
+.greetings-container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 30vh;
+    flex-wrap: wrap;
+    margin-top: 6em;
+
+}
+
+.greetings-text{
+    font-size:2em;
+    font-family: monospace;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+span{
+    font-weight: 700;
+    color: #e0ff00;
+}

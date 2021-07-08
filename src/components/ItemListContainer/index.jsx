@@ -2,29 +2,21 @@ import React, { useEffect, useState } from 'react'
 import 'components/CardWidget/styles.css'
 import CardWidget from 'components/CardWidget'
 import SpinnerLoader from 'components/SpinnerLoader'
+import getProducts from 'services/getProducts'
 
-import { DATA } from 'data.js'
-
-export default function ItemListContainer ({ setItemSelected }) {
-    const createPromise = () => {
+export default function ItemListContainer () {
+    const getProductsList = () => {
         return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(DATA)
-                reject(new Error('hubo un problema al actualizar los productos'))
-            }, 1000)
-        })
+            resolve(getProducts())
+            reject(new Error('hubo un problema al actualizar los productos'))
+        }, 1000)
     }
-
     const [productos, setProductos] = useState([])
 
-    const ejecutarPromise = () => {
-        createPromise().then((data) => {
+    useEffect(() => {
+        getProductsList().then((data) => {
             setProductos(data)
         })
-    }
-
-    useEffect(() => {
-        ejecutarPromise()
     }, [])
 
     return (
@@ -36,7 +28,10 @@ export default function ItemListContainer ({ setItemSelected }) {
             )
             : (
                 <div className="Card-container">
-                    { productos.map((card, index) => <CardWidget id={index + '_card'} key={card.id} name={card.name} stock={card.stock} setItemSelected={setItemSelected}/>) }
+                    { productos.map((card) => <CardWidget
+                        key={card.guid}
+                        properties={card}
+                    />) }
                 </div>
             )
     )

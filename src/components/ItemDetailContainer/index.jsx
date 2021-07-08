@@ -2,19 +2,19 @@ import React, { useEffect, useState } from 'react'
 import 'components/CardWidget/styles.css'
 import ItemDetail from 'components/ItemDetail'
 import SpinnerLoader from 'components/SpinnerLoader'
+import { useParams } from 'react-router'
+import getProducts from 'services/getProducts'
 
-import { DATA } from 'data.js'
-
-export default function ItemDetailContainer (props) {
+export default function ItemDetailContainer () {
     const getItem = () => {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve(DATA)
+                resolve(getProducts())
                 reject(new Error('hubo un problema al actualizar los productos'))
-            }, 2000)
+            }, 10)
         })
     }
-
+    const { id } = useParams()
     const [producto, setProducto] = useState([])
 
     const ejecutarPromise = () => {
@@ -35,7 +35,7 @@ export default function ItemDetailContainer (props) {
             )
             : (
                 <div className="Item-detail">
-                    <ItemDetail key={producto.key} detail={producto[props.itemId]} />
+                    <ItemDetail key={producto.key} detail={producto[id]} />
                 </div>
             )
     )
