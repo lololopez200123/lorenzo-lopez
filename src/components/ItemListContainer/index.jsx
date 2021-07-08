@@ -5,13 +5,15 @@ import SpinnerLoader from 'components/SpinnerLoader'
 import getProducts from 'services/getProducts'
 
 export default function ItemListContainer () {
-    const getProductsList = () => {
-        return new Promise((resolve, reject) => {
-            resolve(getProducts())
-            reject(new Error('hubo un problema al actualizar los productos'))
-        }, 1000)
-    }
     const [productos, setProductos] = useState([])
+
+    const getProductsList = async () => {
+        try {
+            return await getProducts()
+        } catch {
+            console.log('hubo un problema al actualizar los productos')
+        }
+    }
 
     useEffect(() => {
         getProductsList().then((data) => {

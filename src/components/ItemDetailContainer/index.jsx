@@ -6,14 +6,14 @@ import { useParams } from 'react-router'
 import getProducts from 'services/getProducts'
 
 export default function ItemDetailContainer () {
-    const getItem = () => {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(getProducts())
-                reject(new Error('hubo un problema al actualizar los productos'))
-            }, 10)
-        })
+    const getItem = async () => {
+        try {
+            return await getProducts()
+        } catch (error) {
+            console.log('hubo un problema al actualizar los productos')
+        }
     }
+
     const { id } = useParams()
     const [producto, setProducto] = useState([])
 
