@@ -3,23 +3,23 @@ import 'components/CardWidget/styles.css'
 import CardWidget from 'components/CardWidget'
 import SpinnerLoader from 'components/SpinnerLoader'
 import getProducts from 'services/getProducts'
+import { useParams } from 'react-router-dom'
 
 export default function ItemListContainer () {
+    const { category } = useParams()
     const [productos, setProductos] = useState([])
 
-    const getProductsList = async () => {
+    useEffect(async () => {
         try {
-            return await getProducts()
-        } catch {
-            console.log('hubo un problema al actualizar los productos')
+            const data = await getProducts()
+            if (category) {
+                const filterData = data.filter(product => product.category === category)
+                setProductos(filterData)
+            } else if (!category) setProductos(data)
+        } catch (error) {
+            console.log('hubo un problema al actualizar los productos', error)
         }
-    }
-
-    useEffect(() => {
-        getProductsList().then((data) => {
-            setProductos(data)
-        })
-    }, [])
+    }, [category])
 
     return (
         (productos.length === 0)

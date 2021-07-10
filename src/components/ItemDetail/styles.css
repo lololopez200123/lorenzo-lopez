@@ -1,16 +1,35 @@
 .container-detail{
-    display: grid;
+    display: flex;
     justify-content: center;
+    width:100vw;
+    margin-top:2em
 }
 
 .item-detail-container{
     display:grid;
+    justify-content:center;
     background:white;
-    max-width:100%;
+    max-width:70%;
     border-radius:1%;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 2fr ;
     padding: 1em 2em;
     text-align:center;
     margin-top: 1em;
+}
+
+.item-detail-text{
+    padding-left:.5em
+}
+
+.item-detail-text h3{
+    font-size: 1em;
+    font-weight: 500
+}
+
+@media(min-width:1200px){
+    .item-detail-text{
+        margin-top:55px;
+        text-align:left
+    }
 }

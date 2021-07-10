@@ -31,7 +31,9 @@
     font-weight:700;
     border-style:none;
     margin: 1.4em 0em;
-    transition:.5s ease background-color
+    transition:.5s ease background-color;
+    border-radius:10px;
+    cursor:pointer
   }
 
   .card-btn:hover{

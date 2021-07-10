@@ -1,18 +1,17 @@
 import React from 'react'
-import logo from 'logo.png'
 import 'components/ItemCount/styles.css'
 import ItemCount from 'components/ItemCount'
 import { Link } from 'react-router-dom'
 
 export default function CardWidget ({ properties }) {
-    const { name, stock, price, id } = properties
+    const { name, stock, price, id, picture } = properties
 
     const onAdd = () => {
         alert('PRODUCTO AÑADIDO AL CARRO')
     }
     return (
         <div className="Card">
-            <img src={logo} className="Card-logo" alt="logo" />
+            <img src={picture} className="Card-logo" alt="logo" />
             <p className="Card-text">
                 Curso: {name}
             </p>

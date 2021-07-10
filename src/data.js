@@ -5,7 +5,8 @@ export const DATA = [
         name: 'React',
         stock: 4,
         price: '$1506',
-        picture: 'http://placehold.it/32x32',
+        category: 'Frameworks',
+        picture: 'https://i.imgur.com/3ijJaQI.png',
         description: 'Sunt et ad irure eu nostrud deserunt dolore ex. Cillum qui nostrud est proident fugiat amet. Qui cillum fugiat irure non. Ipsum exercitation aute tempor exercitation dolor ut ut minim minim deserunt ullamco do ut. Lorem elit minim adipisicing voluptate eu deserunt irure.\r\n'
     },
     {
@@ -14,7 +15,8 @@ export const DATA = [
         name: 'Vue.js',
         stock: 3,
         price: '$3552',
-        picture: 'http://placehold.it/32x32',
+        category: 'Frameworks',
+        picture: 'https://i.imgur.com/IxIPWwd.png',
         description: 'Mollit culpa aliquip laborum in do adipisicing sint cupidatat aliqua ex sit in. Incididunt cupidatat officia deserunt minim elit dolor incididunt magna. Quis exercitation officia nostrud nostrud dolore in. Nisi sint aliquip dolore magna in culpa et non commodo eiusmod eiusmod excepteur aute. Esse eiusmod anim elit dolor nulla. Do officia nostrud Lorem officia id laboris et nisi consequat mollit sit officia officia.\r\n'
     },
     {
@@ -23,7 +25,8 @@ export const DATA = [
         name: 'Next.js',
         stock: 6,
         price: '$3080',
-        picture: 'http://placehold.it/32x32',
+        category: 'React',
+        picture: 'https://i.imgur.com/nLVxjM5.png',
         description: 'Ad laboris occaecat occaecat exercitation excepteur cillum. Aute sint consectetur do magna est officia dolor incididunt laboris nulla. Reprehenderit incididunt ex nostrud cupidatat commodo velit culpa occaecat labore in id irure excepteur fugiat. Magna magna voluptate excepteur officia velit. Pariatur ex officia velit id aute incididunt nostrud. Eu do eu irure sunt nostrud.\r\n'
     },
     {
@@ -32,7 +35,8 @@ export const DATA = [
         name: 'Express',
         stock: 2,
         price: '$1284',
-        picture: 'http://placehold.it/32x32',
+        category: 'Backend',
+        picture: 'https://i.imgur.com/PilZff3.png',
         description: 'Occaecat deserunt nisi nulla nostrud tempor amet aliqua in ea. Eiusmod aliqua esse dolor amet adipisicing cillum culpa sint sint consectetur. Elit sint non qui magna cillum ut pariatur sunt sint dolor. Laborum culpa eiusmod sunt cillum. Duis et occaecat sit quis exercitation aliqua ipsum. Ex fugiat magna dolore culpa veniam voluptate eu non cupidatat consectetur minim ut.\r\n'
     },
     {
@@ -41,7 +45,8 @@ export const DATA = [
         name: 'Redux',
         stock: 9,
         price: '$1422',
-        picture: 'http://placehold.it/32x32',
+        category: 'React',
+        picture: 'https://i.imgur.com/Bx2IBqI.png',
         description: 'Nisi aliquip quis magna labore labore aute laborum officia. Incididunt id ullamco sunt velit ea eu dolor sint ullamco culpa veniam. Lorem nostrud eu reprehenderit excepteur proident minim adipisicing laboris. Labore veniam nostrud eu tempor pariatur consectetur velit in proident consequat aliqua cillum. Et labore cupidatat culpa commodo exercitation id ad excepteur sit. Aliquip mollit laboris laboris veniam minim eu esse amet eu adipisicing laboris.\r\n'
     },
     {
@@ -50,7 +55,8 @@ export const DATA = [
         name: 'Angular',
         stock: 8,
         price: '$1186',
-        picture: 'http://placehold.it/32x32',
+        category: 'Frameworks',
+        picture: 'https://i.imgur.com/Uw0KDcd.png',
         description: 'Tempor do voluptate esse qui esse nisi in consectetur anim id irure proident Lorem officia. Adipisicing eiusmod eiusmod ad consequat veniam et id. Anim nisi consequat nulla officia. Adipisicing nisi ad anim fugiat aliquip cupidatat proident Lorem excepteur adipisicing ea.\r\n'
     },
     {
@@ -59,7 +65,8 @@ export const DATA = [
         name: 'Javascript',
         stock: 4,
         price: '$2767',
-        picture: 'http://placehold.it/32x32',
+        category: 'FrontEnd',
+        picture: 'https://i.imgur.com/oM0bGox.png',
         description: 'Duis cillum veniam adipisicing in nostrud. Laborum ullamco pariatur fugiat duis aliqua duis tempor magna deserunt. Qui ut consequat duis ad ipsum adipisicing Lorem est sit proident.\r\n'
     },
     {
@@ -68,34 +75,38 @@ export const DATA = [
         name: 'Next Css',
         stock: 15,
         price: '$2422',
-        picture: 'http://placehold.it/32x32',
+        category: 'FrontEnd',
+        picture: 'https://i.imgur.com/vSVeTqj.png',
         description: 'Occaecat laborum esse non minim sint eiusmod elit. Est commodo fugiat laborum ad est dolore et quis aliquip aliqua magna adipisicing amet proident. Aliqua veniam deserunt irure culpa enim. Enim nulla occaecat voluptate deserunt nostrud reprehenderit officia adipisicing velit eu nulla incididunt. Ipsum in sit fugiat nostrud. Do eiusmod ex voluptate dolore cillum dolore do.\r\n'
     },
     {
         id: 8,
         guid: 'd5552324-6794-49a2-8caa-66a5949b24fc',
-        name: 'VS Code',
+        name: 'Post Css',
         stock: 10,
         price: '$2504',
-        picture: 'http://placehold.it/32x32',
+        category: 'FrontEnd',
+        picture: 'https://i.imgur.com/bX7ampx.png',
         description: 'Sit adipisicing adipisicing ad anim mollit quis commodo labore. Fugiat amet incididunt reprehenderit elit nostrud occaecat fugiat non proident Lorem adipisicing elit. Exercitation fugiat occaecat nostrud dolore aute.\r\n'
     },
     {
         id: 9,
         guid: '2602ba7b-747d-4c7a-bbf4-7162b08d1f8f',
-        name: 'Heroku',
+        name: 'MongoDb',
         stock: 13,
         price: '$3625',
-        picture: 'http://placehold.it/32x32',
+        category: 'BackEnd',
+        picture: 'https://i.imgur.com/ZXUSVaA.png',
         description: 'Deserunt cillum in qui qui do minim excepteur Lorem ullamco amet adipisicing amet aute minim. Officia tempor cillum irure est eu anim proident pariatur dolor. Quis ad officia laboris pariatur velit mollit exercitation adipisicing dolore velit sunt. Duis elit officia irure dolor ut ut enim velit do et laborum esse. Sint voluptate pariatur dolor veniam ad. Esse eu eu cillum amet consectetur eu aute deserunt excepteur ad in commodo. Tempor sit mollit proident culpa aliquip ex adipisicing mollit commodo veniam dolore ex adipisicing incididunt.\r\n'
     },
     {
         id: 10,
         guid: '7f05aa2a-6377-41e0-a046-1a09b203aeeb',
-        name: 'CI - CD',
+        name: 'Sequelize',
         stock: 1,
         price: '$3993',
-        picture: 'http://placehold.it/32x32',
+        category: 'BackEnd',
+        picture: 'https://i.imgur.com/tKJYyud.png',
         description: 'Commodo id anim commodo ea ad ut quis incididunt. Anim cupidatat eu anim officia eu occaecat proident ea nisi minim aute elit. Magna mollit amet nulla amet irure cupidatat consectetur exercitation laborum sint ipsum anim. Do est eu incididunt sint reprehenderit anim amet irure aliqua consectetur. Enim adipisicing irure officia deserunt qui esse enim.\r\n'
     }
 ]

@@ -21,3 +21,31 @@ span{
     font-weight: 700;
     color: #e0ff00;
 }
+
+
+.greetings-container{
+    background-image: url('https://i.imgur.com/EaWV00u.jpg');
+    position:absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:91.5vh;
+    width:100%;
+    top:-45px;
+    z-index:-2;
+}
+
+.overlay{
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: -1;
+}
+
+.greetings-container-box{
+    text-align: center;
+}

@@ -1,14 +1,5 @@
-import { DATA } from 'data.js'
+const apiUrl = 'https://mocki.io/v1/8bfdc214-6c59-4b11-bde4-1f4e3a67ef42'
 
-function getServerHost () {
-    const apiUrl = 'https://mocki.io/v1/dd3d229f-7f6c-47b3-a94e-b59f780e3d17'
-    if (apiUrl != null) {
-        return apiUrl
-    } else {
-        return DATA
-    }
-}
 // URLs
-export const SERVER_HOST = getServerHost()
 
-export const API_BASE_URL = `${SERVER_HOST}`
+export const API_BASE_URL = `${apiUrl}`

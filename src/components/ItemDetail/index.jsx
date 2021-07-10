@@ -7,11 +7,14 @@ export default function ItemDetail ({ detail }) {
             {(detail) &&
             <div className='container-detail'>
                 <div className='item-detail-container'>
-                    <h1>Item detail:</h1>
-                    <div>
-                        <h2>Name: {detail?.name}</h2>
-                        <h2>Price: {detail?.price}</h2>
-                        <h2>Description: {detail?.description}</h2>
+                    <div className='item-detail-img'>
+                        <h1>Detalle del Producto</h1>
+                        <img src={detail?.picture} alt="" className='Card-logo'/>
+                    </div>
+                    <div className='item-detail-text'>
+                        <h2>Nombre: {detail?.name}</h2>
+                        <h2>Precio: {detail?.price}</h2>
+                        <h3>Descripción: {detail?.description}</h3>
                     </div>
                 </div>
             </div>}

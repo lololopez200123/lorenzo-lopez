@@ -1,14 +1,7 @@
 .Card-logo {
-    filter: invert(100%);
     height: 40vmin;
     pointer-events: none;
   }
-  
-
-.Card-logo {
-      animation: App-logo-spin infinite 20s linear;
-  }
-
   
   .Card {
     background:#121212;
@@ -27,13 +20,19 @@
     padding:1em;
     background-color:rgb(224,255,0);
     border:none;
-    align-items:center
+    align-items:center;
+    border-radius:10px;
+    cursor:pointer
   }
 
   .Card-text{
     color:#e0ff00;
     font-weight:600;
     text-transform:uppercase
+  }
+
+  .Card img{
+    border-radius: 10px
   }
   
   @keyframes App-logo-spin {
