@@ -40,3 +40,14 @@
     background-color:yellow;
     transition:.5s ease all
   }
+
+  .count-inside-detail{
+        color:white;
+        background-color: #121212;
+        padding:1em;
+        display:grid;
+        min-height: 10em;
+        max-height: 14em;
+        border-radius: 15px;
+        margin-top:.5em
+  }

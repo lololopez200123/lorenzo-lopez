@@ -4,6 +4,7 @@ import ItemListContainer from 'components/ItemListContainer'
 import ItemDetailContainer from 'components/ItemDetailContainer'
 import { Route, Redirect } from 'react-router-dom'
 import Greetings from 'components/Greetings'
+import Cart from 'components/Cart'
 
 export default function Main () {
     return (
@@ -19,6 +20,9 @@ export default function Main () {
             </Route>
             <Route exact path='/Detail/:id'>
                 <ItemDetailContainer />
+            </Route>
+            <Route exact path='/Cart/'>
+                <Cart />
             </Route>
             <Redirect to='/Cursos/'></Redirect>
         </>
