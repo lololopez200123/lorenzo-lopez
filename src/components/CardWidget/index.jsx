@@ -1,16 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import 'components/ItemCount/styles.css'
 import ItemCount from 'components/ItemCount'
 import { Link } from 'react-router-dom'
+import { CartContext } from './../../context/cartContext'
 
 export default function CardWidget ({ properties }) {
     const { name, stock, price, id, picture } = properties
     const [itemsInCart, setItemsInCart] = useState(false)
+    const { addItemToCart, deleteOneItemFromCart } = useContext(CartContext)
 
     const onAdd = (e, stock, counter) => {
-        (!itemsInCart)
-            ? setItemsInCart(true)
-            : setItemsInCart(false);
+        if (!itemsInCart) {
+            setItemsInCart(true)
+            addItemToCart([id, stock, name])
+        } else {
+            setItemsInCart(false)
+            deleteOneItemFromCart([id])
+        }
         (!itemsInCart)
             ? alert(`se ha añadido ${stock} productos de ${counter} en stock`)
             : alert(`se ha eliminado ${stock} productos del carrito`)
