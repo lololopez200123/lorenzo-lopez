@@ -16,15 +16,16 @@ export const CartContextProvider = ({ children }) => {
         setTotal(e => e + 1)
     }
 
-    const deleteOneItemFromCart = (item) => {
+    const deleteOneItemFromCart = (id) => {
+        console.log(id)
         const filterProductArr = cartItems.filter(
-            (cartItem) => cartItem.id === item.id
+            (cartItem) => cartItem.id === id
         )
         filterProductArr.pop()
-        const productsArr = cartItems.filter((cartItem) => cartItem.id !== item.id)
+        const productsArr = cartItems.filter((cartItem) => cartItem.id !== id)
         const newArr = [...productsArr, ...filterProductArr]
         setCartItems(newArr)
-        setTotal(e => e - 1)
+        setTotal(e => (e >= 0) && e - 1)
     }
 
     return (

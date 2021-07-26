@@ -12,7 +12,7 @@ export default function CardWidget ({ properties }) {
     const onAdd = (e, stock, counter) => {
         if (!itemsInCart) {
             setItemsInCart(true)
-            addItemToCart([id, stock, name])
+            addItemToCart([{ id: id, stock: stock, name: name }])
         } else {
             setItemsInCart(false)
             deleteOneItemFromCart([id])
