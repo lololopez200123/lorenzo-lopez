@@ -1,12 +1,12 @@
 
 import { getFirestore } from './../firebase'
 
-const getProducts = async () => {
+const getSingleProduct = async (name) => {
     const db = getFirestore()
     const snapshot = await db.collection('Cursos')
-    return snapshot
+    return snapshot.where('name', '==', name)
         .get()
         .then((q) => q.docs.map(doc => doc.data()))
 }
 
-export default getProducts
+export default getSingleProduct

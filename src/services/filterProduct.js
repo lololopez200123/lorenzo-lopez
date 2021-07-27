@@ -1,12 +1,12 @@
 
 import { getFirestore } from './../firebase'
 
-const getProducts = async () => {
+const getFilteredProducts = async (category) => {
     const db = getFirestore()
     const snapshot = await db.collection('Cursos')
-    return snapshot
+    return snapshot.where('category', '==', category)
         .get()
         .then((q) => q.docs.map(doc => doc.data()))
 }
 
-export default getProducts
+export default getFilteredProducts

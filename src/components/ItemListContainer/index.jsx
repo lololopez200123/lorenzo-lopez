@@ -22,7 +22,7 @@ export default function ItemListContainer () {
     }, [category])
 
     return (
-        (productos.length === 0)
+        (productos?.length === 0)
             ? (
                 <div className="Card-container-loading">
                     <SpinnerLoader />
@@ -30,7 +30,7 @@ export default function ItemListContainer () {
             )
             : (
                 <div className="Card-container">
-                    { productos.map((card) => <CardWidget
+                    { productos?.map((card) => <CardWidget
                         key={card.guid}
                         properties={card}
                     />) }
